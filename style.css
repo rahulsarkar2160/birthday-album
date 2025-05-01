@@ -51,7 +51,7 @@ body {
   }
   
   footer {
-    padding: 1rem;
+    padding: 0;
     background-color: #ffd6e0;
     font-size: 1.6rem;
     font-family: 'MyCustomFontAllura', sans-serif;
