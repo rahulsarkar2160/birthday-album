@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'MyCustomFontAllura';
+  src: url('Allura/Allura-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyCustomFontGH';
+  src: url('Gochi_Hand/GochiHand-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: 'MyCustomFontGH', sans-serif;
+    background: #fff6f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 150%;
+  }
+  
+  header {
+    background-color: #ffafcc;
+    padding: 2rem;
+    color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    padding: 1rem;
+    background-color: #ffd6e0;
+    font-size: 1.6rem;
+    font-family: 'MyCustomFontAllura', sans-serif;
+    font-weight: bold;
+  }
+  
+
+  
+  @keyframes bounceFadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) translateY(-50px);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.1) translateY(10px);
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: bounceFadeIn 1.2s ease-out;
+  }
+  @keyframes pulseColor {
+    0%, 100% {
+      transform: scale(1);
+      color: #ffffff;
+    }
+    50% {
+      transform: scale(1.2);
+      color: #f4f59e;
+    }
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: pulseColor 2.5s ease-in-out infinite;
+  }
+  
+  .confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0.8;
+    top: -10px;
+    animation: dropConfetti 5s linear infinite;
+    border-radius: 50%;
+  }
+  
+  /* Randomize each confetti's left position, color, size, and delay */
+  .confetti:nth-child(1) { left: 10%; background: #f94144; animation-delay: 0s; }
+  .confetti:nth-child(2) { left: 20%; background: #f3722c; animation-delay: 1s; }
+  .confetti:nth-child(3) { left: 30%; background: #f8961e; animation-delay: 0.5s; }
+  .confetti:nth-child(4) { left: 40%; background: #f9844a; animation-delay: 1.5s; }
+  .confetti:nth-child(5) { left: 50%; background: #f9c74f; animation-delay: 0.2s; }
+  .confetti:nth-child(6) { left: 60%; background: #90be6d; animation-delay: 1.2s; }
+  .confetti:nth-child(7) { left: 70%; background: #43aa8b; animation-delay: 3.8s; }
+  .confetti:nth-child(8) { left: 80%; background: #577590; animation-delay: 1.8s; }
+  .confetti:nth-child(9) { left: 90%; background: #277da1; animation-delay: 0.4s; }
+  .confetti:nth-child(10){ left: 5%; background: #9b5de5; animation-delay: 1.3s; }
+  .confetti:nth-child(11) { left: 15%; background: #f94144; animation-delay: 3s; }
+  .confetti:nth-child(12) { left: 25%; background: #f3722c; animation-delay: 1.6s; }
+  .confetti:nth-child(13) { left: 35%; background: #f8961e; animation-delay: 2.5s; }
+  .confetti:nth-child(14) { left: 45%; background: #f9844a; animation-delay: 3.5s; }
+  .confetti:nth-child(15) { left: 55%; background: #f9c74f; animation-delay: 0.8s; }
+  .confetti:nth-child(16) { left: 65%; background: #90be6d; animation-delay: 4.8s; }
+  .confetti:nth-child(17) { left: 75%; background: #43aa8b; animation-delay: 2.8s; }
+  .confetti:nth-child(18) { left: 85%; background: #577590; animation-delay: 0.6s; }
+  .confetti:nth-child(19) { left: 95%; background: #277da1; animation-delay: 1.4s; }
+  .confetti:nth-child(20){ left: 92%; background: #9b5de5; animation-delay: 1.7s; }
+  .confetti:nth-child(21) { left: 78%; background: #277da1; animation-delay: 2.4s; }
+  .confetti:nth-child(22){ left: 47%; background: #9b5de5; animation-delay: 1.9s; }
+  
+  @keyframes dropConfetti {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  .confetti-container2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .emoji {
+    position: absolute;
+    top: -2rem;
+    font-size: 1.5rem;
+    animation: dropEmoji 6s linear infinite;
+    opacity: 0;
+  }
+  
+  /* Customize placement and animation delay for variety */
+  .emoji:nth-child(1)  { left: 10%; animation-delay: 0s; }
+  .emoji:nth-child(2)  { left: 20%; animation-delay: 1s; }
+  .emoji:nth-child(3)  { left: 30%; animation-delay: 0.5s; }
+  .emoji:nth-child(4)  { left: 40%; animation-delay: 1.5s; }
+  .emoji:nth-child(5)  { left: 50%; animation-delay: 0.2s; }
+  .emoji:nth-child(6)  { left: 60%; animation-delay: 1.2s; }
+  .emoji:nth-child(7)  { left: 70%; animation-delay: 0.8s; }
+  .emoji:nth-child(8)  { left: 80%; animation-delay: 1.3s; }
+  .emoji:nth-child(9)  { left: 90%; animation-delay: 0.4s; }
+  .emoji:nth-child(10) { left: 13%; animation-delay: 3.5s; }
+  .emoji:nth-child(11)  { left: 15%; animation-delay: 2.3s; }
+  .emoji:nth-child(12)  { left: 25%; animation-delay: 3s; }
+  .emoji:nth-child(13)  { left: 35%; animation-delay: 1.8s; }
+  .emoji:nth-child(14)  { left: 45%; animation-delay: 3.2s; }
+  .emoji:nth-child(15)  { left: 55%; animation-delay: 2.2s; }
+  .emoji:nth-child(16)  { left: 65%; animation-delay: 0.7s; }
+  .emoji:nth-child(17)  { left: 75%; animation-delay: 3.8s; }
+  .emoji:nth-child(18)  { left: 85%; animation-delay: 3.2s; }
+  .emoji:nth-child(19)  { left: 95%; animation-delay: 2.4s; }
+  .emoji:nth-child(20) { left: 5%; animation-delay: 2s; }
+  
+  @keyframes dropEmoji {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+         
