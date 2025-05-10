@@ -22,8 +22,8 @@ You can clone or fork this repository and add your own:
 - Captions or birthday messages
 - Styling in `styles.css` for theme customization
 
-📌 Note
+##📌 Note
 This version does not include any sample images. It is intended as a blank template for future customization.
 
-📄 License
+##📄 License
 Open-source under the MIT License.
