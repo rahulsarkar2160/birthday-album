@@ -21,6 +21,7 @@ You can clone or fork this repository and add your own:
     -put your images into the 'images' folder and rename the photos to 'photo1', 'photo2', 'photo3',... upto 'photo16'. If you want to increase or decrease the number of photos then please edit the index.html file.  
 - Captions or birthday messages
 - Styling in `styles.css` for theme customization
+- I have included 2 Google fonts inside this repo as part of the template. Feel free to add your own fonts.
 
 ## 📌 Note
 This version does not include any sample images. It is intended as a blank template for future customization.
