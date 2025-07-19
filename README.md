@@ -4,7 +4,7 @@ This repository contains a simple and responsive **Birthday Album Page** templat
 
 🔗 **Live Demo:** 
 [Click here](https://htmlpreview.github.io/?https://github.com/rahulsarkar2160/birthday-album/blob/main/index.html) 
->Note: it uses (https://htmlpreview.github.io/) to preview the index.html of the repo. The sections will expand once photos are added in the folder as mentioned below in "How to Use".
+>Note: it uses (https://htmlpreview.github.io/) to preview the index.html of the repo. Each "Birthday Moment 1,2,3 ..." section will expand once photos are added in the "images" folder as mentioned below in "How to Use".
 
 ## ✨ Project Purpose
 
