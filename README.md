@@ -4,6 +4,7 @@ This repository contains a simple and responsive **Birthday Album Page** templat
 
 🔗 **Live Demo:** 
 [Click here](https://htmlpreview.github.io/?https://github.com/rahulsarkar2160/birthday-album/blob/main/index.html) 
+>Note: it uses (https://htmlpreview.github.io/).
 
 ## ✨ Project Purpose
 
