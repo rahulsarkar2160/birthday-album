@@ -2,6 +2,8 @@
 
 This repository contains a simple and responsive **Birthday Album Page** template built with pure **HTML** and **CSS**. It is intended as a layout you can customize with your own images and content to celebrate birthdays or other special occasions.
 
+🔗 **Live Demo:** [https://your-render-link.onrender.com]([https://your-render-link.onrender.com](https://htmlpreview.github.io/?https://github.com/rahulsarkar2160/birthday-album/blob/main/index.html))
+
 ## ✨ Project Purpose
 
 This is a personal template I created as part of a learning and creative exercise. It's meant to showcase my ability to design and structure a themed web page layout using only front-end technologies.
